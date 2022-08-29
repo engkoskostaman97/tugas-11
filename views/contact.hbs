@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Contact Form</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.jpg">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+</head>
+
+
+<body>
+
+    <nav>
+
+        <div class="nav-left">
+            <img src="/assets/img/logo.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/myproject">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="/contact">Contact Me</a>
+        </div>
+
+    </nav>
+
+    <h2>GEN IN TOUCH</h2>
+
+    <form>
+
+        <div>
+            <label for="input-name">Name</label>
+            <input id="input-name" type="text">
+        </div>
+
+        <div>
+            <label for="input-email">Email</label>
+            <input id="input-email" type="email">
+        </div>
+
+        <div>
+            <label for="input-phone">Phone Number</label>
+            <input id="input-phone" type="number">
+        </div>
+
+        <div>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject">
+                <option value="">Select</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="Fullstack">Fullstack</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="input-message">Your Message</label>
+            <textarea id="input-message"></textarea>
+        </div>
+
+        <button type="button" onclick="submitData()">Submit</button>
+
+
+    </form>
+
+</body>
+<script src="form.js"></script>
+
+
+</html>

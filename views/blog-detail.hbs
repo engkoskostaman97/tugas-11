@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <title>Creating Blog Page - detail</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.jpg">
+  <link rel="stylesheet" href="/assets/css/blog-detail.css" />
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="left-side">
+      <a href="/">
+        <img src="/assets/img/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/myproject" class="list-active">Add Project</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <a href="/contact"> Contact Me </a>
+    </div>
+  </nav>
+
+  <div class="card-thread">
+    <h1 class="judul-thread">
+      {{data.title}}
+    </h1>
+
+    <div class="head-thread">
+      <img class="foto-detail" src="/assets/img/blog-img-detail.png" alt="detail.png" />
+      <div class="durasi-dan-tanggal">
+        <div>
+          <h2>Duration</h2>
+          <br>
+          <h3 class="durasi"> <img class="foto-durasi" src="/assets/img/calendar.png" alt="calendar"
+              style="width: 20px;" /> {{data.start_date}} - {{data.end_date}} </h3>
+          <h3 class="durasi"> <img class="foto-durasi" src="/assets/img/clock.png" alt="clock" style="width: 20px;" />
+            {{data.duration}} </h3>
+        </div>
+        <div>
+          <br>
+          <h2>Technologies</h2>
+          <br>
+          <div class="blog-technologies">
+            <div class="logo-kiri">
+              <h3 class="logo-js"> <img class="foto-js" src="/assets/img/reactjs-logo.png" alt="reactjs-logo"
+                  style="width: 20px;" /> React JS </h3>
+              <h3 class="logo-js"> <img class="foto-js" src="/assets/img/socket-io.png" alt="secoketio-logo"
+                  style="width: 20px;" /> Typescript </h3>
+            </div>
+            <div class="logo-kanan">
+              <h3 class="logo-js"> <img class="foto-js" src="/assets/img/nodejs-logo.png" alt="nodejs-logo"
+                  style="width: 20px;" /> Node JS </h3>
+              <h3 class="logo-js"> <img class="foto-js" src="/assets/img/javascript-logo.png" alt="js-logo"
+                  style="width: 20px;" /> JavaScript </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="isi-thread">
+      <p>
+        {{data.content}}
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

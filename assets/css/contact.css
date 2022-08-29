@@ -1,0 +1,96 @@
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+body {
+    background-color: grey;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(223, 222, 224);
+    display: flex;
+    height: 7vh;
+}
+
+.nav-left {
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+    flex: 50%;
+
+}
+
+.nav-left li {
+    display: inline;
+}
+
+.nav-left ul {
+    display: flex;
+
+}
+
+.nav-left ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-right {
+
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+.nav-right a {
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    margin: 90px auto;
+    width: 350px;
+    padding: 10px;
+
+}
+
+form div {
+    margin-top: 15px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+form button {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+
+}
